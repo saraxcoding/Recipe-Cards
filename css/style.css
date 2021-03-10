@@ -1,0 +1,158 @@
+/***BASE STYLE***/
+
+body {
+    background: #daf7f6; /*changed background-color to just background, also deleted the separate headers font sizes and p font sizes***/
+    color: #3b3b3b;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    line-height: 16px;
+}
+
+/***HEADER***/
+
+header {
+    background: #ffffff;
+    text-align: center;
+}
+
+header h1 {
+    color: #f16059;
+    display: inline-block; /*it's inline value for the display property that has default padding and height-width (meaning you don't add padding property)*/
+    font-family: 'Montserrat', sans-serif;
+    font-size: 48px;
+    font-weight: bold; /*added font-weight, which is from step 13 from consulting style guide*/
+    margin: 0; /*shrunk the space of the recipe collection title at the top*/
+    padding: 40px 0; /*padding went from 10px to 40px and deleted height property, this adds padding ONLY to top-bottom*/
+    text-transform: uppercase;
+}
+
+header img {
+    margin-right: 16px; /*changed value from 10px to 16px***/
+}
+
+/***MAIN***/
+
+main {
+    margin: 0 auto; /*two values for the margin property: the first value indicates vertically and the second indicates horizontally; this setting of 0 and auto CENTERS the content***/
+    width: 1000px;
+}
+
+.card {
+    margin: 25px 0; /*add margins to top-bottom, changed from auto to 25px since there's a bit of space btwn header and the recipe cards*/
+    overflow: auto;
+}
+
+.image {
+    float: left;
+    height: 550px;
+    width: 500px;
+}
+
+.recipe {
+    background: #ffffff;
+    box-sizing: border-box;
+    float: left;
+    height: 550px;
+    padding: 20px;
+    width: 500px;
+}
+
+#cookies .image {
+    background-image: url("..img/gluten-free-sugar-cookies.jpg"); /*MUST INCLUDE LINKS TO THE IMAGES WITHIN THE HTML!!!!!*/
+    background-size: cover;
+}
+
+#pesto .image {
+    background-image: url("..img/nut-free-pesto.jpg");
+    background-size: cover;
+}
+
+#salad .image {
+    background-image: url("..img/watermelon-salad.jpg");
+    background-size: cover;
+}
+
+.recipe h2 {
+    color: #f16059;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 40px;
+    margin-top: 0;
+    text-transform: uppercase;
+}
+
+.time {/*step 5 of styling recipe times*/
+    border-color: #3b3b3b; 
+    border-style: solid;
+    border-width: 1px;
+    margin-bottom: 20px; 
+    overflow: auto;
+}
+
+.time div { /*steps 6 - 9 of styling recipe times GOT THIS CORRECT WITHOUT THE SOLUTION!!*/
+    box-sizing: border-box;
+    float: left;
+    padding-left: 6px;
+    text-transform: uppercase;
+    width: 33.3333%;
+}
+
+.time .cook {
+    border-color: #3b3b3b;
+    border-style: solid;
+    border-width: 0 1px; /*top and bottom are 0 since there's already a border around the time div but left and right have a border*/
+}
+
+.time img { /*GOT THIS CORRECT WITHOUT THE SOLUTION!!*/
+    height: auto;
+    margin-right: 5px;
+    vertical-align: middle;
+    width: 15px;
+}
+
+.time-details { /*GOT THIS CORRECT WITHOUT THE SOLUTION!!*/
+    display: inline-block;
+}
+
+.time strong { /*GOT THIS CORRECT WITHOUT THE SOLUTION!!*/
+    font-family: 'Montserrat', sans-serif;
+}
+
+.columns {
+    overflow: auto;
+}
+
+.directions {
+    float: left;
+    width: 240px;
+}
+
+.ingredients {
+    float: left;
+    margin-right: 10px;
+    width: 205px;
+}
+
+.recipe h3 {
+    border-color: #3b3b3b;
+    border-style: solid; 
+    border-width: 1px 0;
+    color: #f16059;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 12px;
+    font-weight: bold;
+    padding: 6px; /*uniformity with the padding for the time div*/
+    text-transform: uppercase;
+}
+
+.ingredients ul {
+    line-height: 24px;
+    list-style-type: square;
+    padding-left: 15px;
+}
+
+.directions ol {
+    line-height: 24px;
+    padding-left: 15px;
+}
